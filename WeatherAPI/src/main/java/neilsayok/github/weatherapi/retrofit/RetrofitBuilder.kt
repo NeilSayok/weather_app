@@ -24,7 +24,9 @@ abstract class RetrofitBuilder {
             val request = chain.request().newBuilder()
             val originalHttpUrl = chain.request().url
             val newUrl = originalHttpUrl.newBuilder()
-                .addQueryParameter("appid", "364ba416ff09e1a521cac00302d081bd").build()
+                .addQueryParameter("appid", "364ba416ff09e1a521cac00302d081bd")
+                .addQueryParameter("exclude","minutely")
+                .build()
             println(newUrl)
             request.url(newUrl)
             return chain.proceed(request.build())

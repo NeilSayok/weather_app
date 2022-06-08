@@ -38,6 +38,15 @@ class TodayFragment : Fragment() {
 
         MainActivity.weatherViewModel.weatherData.observe(viewLifecycleOwner, Observer {
             Log.d("Weather", it.toString())
+
+            val currentWeather = it.current
+
+            binding.feelsLikeTv.text = "Feels like ${currentWeather?.feelsLike}"+getString(R.string.degree_c)
+            binding.tempTv.text = currentWeather?.temp.toString()
+            //binding.weatherDescriptionTv.text = currentWeather?.weather
+
+
+
         })
 
 
@@ -56,7 +65,10 @@ class TodayFragment : Fragment() {
                     Toast.makeText(requireContext(),"Longitude value is not correct", Toast.LENGTH_LONG).show()
                 }else{
                     //TODO Fetch Data from api
-                    MainActivity.weatherViewModel.fetchWeatherData()
+                    MainActivity.weatherViewModel.fetchWeatherData(
+                        latitude = lat_text.toDouble(),
+                        longitude = lon_text.toDouble()
+                    )
                 }
             }
         }
