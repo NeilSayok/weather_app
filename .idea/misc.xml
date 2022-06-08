@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/layout/fragment_seven_days.xml" value="0.22826086956521738" />
+        <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/layout/fragment_today.xml" value="0.22826086956521738" />
+        <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/layout/fragment_tommorow.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>
