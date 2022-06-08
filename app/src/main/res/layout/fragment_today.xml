@@ -99,6 +99,7 @@
         android:layout_height="wrap_content"
         android:text="@string/degree_c"
         android:textSize="32sp"
+        android:visibility="gone"
         app:layout_constraintStart_toEndOf="@+id/temp_tv"
         app:layout_constraintTop_toTopOf="@+id/temp_tv" />
 

@@ -26,6 +26,7 @@ abstract class RetrofitBuilder {
             val newUrl = originalHttpUrl.newBuilder()
                 .addQueryParameter("appid", "364ba416ff09e1a521cac00302d081bd")
                 .addQueryParameter("exclude","minutely")
+                .addQueryParameter("units","metric")
                 .build()
             println(newUrl)
             request.url(newUrl)
