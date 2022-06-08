@@ -31,6 +31,7 @@ android {
 
 dependencies {
 
+
     implementation 'androidx.core:core-ktx:1.8.0'
 
     implementation 'com.google.code.gson:gson:2.8.9'
@@ -39,6 +40,8 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
 
 
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-rc01"
     
     testImplementation 'junit:junit:4.13.2'
     testImplementation "com.google.truth:truth:1.1.3"

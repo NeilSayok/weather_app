@@ -7,12 +7,12 @@ import kotlin.random.Random
 
 class APItest {
 
-    private lateinit var api: WeatherAPIDAO
+    private lateinit var api: WeatherAPI
 
 
     @Before
     fun setUp() {
-        api = RetrofitBuilder.getRetrofitBuilder().create(WeatherAPIDAO::class.java)
+        api = RetrofitBuilder.getRetrofitBuilder().create(WeatherAPI::class.java)
     }
 
     @Test
