@@ -85,6 +85,7 @@
         android:id="@+id/temp_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:textSize="64sp"
         app:layout_constraintBottom_toTopOf="@+id/weather_description_tv"
         app:layout_constraintEnd_toEndOf="parent"

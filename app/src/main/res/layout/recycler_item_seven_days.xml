@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layoutDescription="@xml/recycler_item_seven_days_scene">
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="?attr/actionMenuTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Firday, 10 Jun" />
+
+    <TextView
+        android:id="@+id/weather_desc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/date_tv"
+        app:layout_constraintTop_toBottomOf="@+id/date_tv"
+        tools:text="Isolated Thunderstorm" />
+
+    <ImageView
+        android:id="@+id/rv_weather_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/max_temp_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/min_temp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_weather_icon"
+        app:layout_constraintEnd_toEndOf="@+id/max_temp_tv"
+        app:layout_constraintTop_toBottomOf="@+id/max_temp_tv"
+        tools:text="27" />
+
+    <TextView
+        android:id="@+id/max_temp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textColor="?attr/actionMenuTextColor"
+        app:layout_constraintBottom_toTopOf="@+id/min_temp_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_weather_icon"
+        tools:text="37" />
+
+    <TextView
+        android:id="@+id/wind_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Wind"
+        android:visibility="gone"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_weather_icon" />
+
+    <TextView
+        android:id="@+id/humidity_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Humidity"
+        android:visibility="gone"
+
+        app:layout_constraintStart_toStartOf="@+id/wind_tv"
+        app:layout_constraintTop_toBottomOf="@+id/wind_tv" />
+
+    <TextView
+        android:id="@+id/sunrise_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Sunrise/Sunset"
+        android:visibility="gone"
+
+        app:layout_constraintStart_toStartOf="@+id/humidity_tv"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_tv" />
+
+    <TextView
+        android:id="@+id/wind_speed_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="?attr/actionMenuTextColor"
+
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/wind_tv"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        tools:text="19 km/h" />
+
+    <TextView
+        android:id="@+id/umidity_percent_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/actionMenuTextColor"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/humidity_tv"
+        app:layout_constraintStart_toStartOf="@+id/wind_speed_tv"
+        tools:text="64%" />
+
+    <TextView
+        android:id="@+id/sun_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/actionMenuTextColor"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sunrise_tv"
+        app:layout_constraintStart_toStartOf="@+id/umidity_percent_tv"
+        tools:text="4:51am,6:30pm" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Max Temp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/max_temp_tv"
+        app:layout_constraintEnd_toStartOf="@+id/max_temp_tv"
+        app:layout_constraintTop_toTopOf="@+id/max_temp_tv" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Min Temp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/min_temp_tv"
+        app:layout_constraintEnd_toStartOf="@+id/min_temp_tv"
+        app:layout_constraintTop_toTopOf="@+id/min_temp_tv" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

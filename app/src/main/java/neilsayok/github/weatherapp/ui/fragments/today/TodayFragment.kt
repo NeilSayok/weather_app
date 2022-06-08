@@ -45,10 +45,16 @@ class TodayFragment : Fragment() {
             binding.feelsLikeTv.text =
                 "Feels like ${currentWeather?.feelsLike}" + getString(R.string.degree_c)
             binding.tempTv.text = currentWeather?.temp.toString()
-            binding.weatherDescriptionTv.text = currentWeather?.weather?.get(0)?.description ?: ""
+            val wd = currentWeather?.weather?.get(0)?.description ?: ""
+            binding.weatherDescriptionTv.text = wd.split(' ')
+                .joinToString(separator = "_") { word -> word.replaceFirstChar {text -> text.uppercase() } }
+
             binding.degCTv.visibility = View.VISIBLE
 
-            Log.d("Icon URL","http://openweathermap.org/img/wn/${currentWeather?.weather?.get(0)?.icon}@4x.png" )
+            Log.d(
+                "Icon URL",
+                "http://openweathermap.org/img/wn/${currentWeather?.weather?.get(0)?.icon}@4x.png"
+            )
 
             Picasso.get()
                 .load("https://openweathermap.org/img/wn/${currentWeather?.weather?.get(0)?.icon}@2x.png")
