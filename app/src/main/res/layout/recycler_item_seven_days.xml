@@ -105,7 +105,7 @@
         tools:text="19 km/h" />
 
     <TextView
-        android:id="@+id/umidity_percent_tv"
+        android:id="@+id/humidity_percent_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="?attr/actionMenuTextColor"
@@ -121,7 +121,7 @@
         android:textColor="?attr/actionMenuTextColor"
         android:visibility="gone"
         app:layout_constraintBaseline_toBaselineOf="@+id/sunrise_tv"
-        app:layout_constraintStart_toStartOf="@+id/umidity_percent_tv"
+        app:layout_constraintStart_toStartOf="@+id/humidity_percent_tv"
         tools:text="4:51am,6:30pm" />
 
     <androidx.constraintlayout.widget.Guideline

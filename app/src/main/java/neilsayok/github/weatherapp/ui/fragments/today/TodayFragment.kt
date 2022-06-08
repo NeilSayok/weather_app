@@ -47,7 +47,7 @@ class TodayFragment : Fragment() {
             binding.tempTv.text = currentWeather?.temp.toString()
             val wd = currentWeather?.weather?.get(0)?.description ?: ""
             binding.weatherDescriptionTv.text = wd.split(' ')
-                .joinToString(separator = "_") { word -> word.replaceFirstChar {text -> text.uppercase() } }
+                .joinToString(separator = " ") { word -> word.replaceFirstChar {text -> text.uppercase() } }
 
             binding.degCTv.visibility = View.VISIBLE
 

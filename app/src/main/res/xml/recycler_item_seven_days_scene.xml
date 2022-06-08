@@ -6,7 +6,7 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000">
+        motion:duration="400">
        <KeyFrameSet>
        </KeyFrameSet>
         <OnClick />
@@ -52,7 +52,7 @@
             android:layout_marginStart="8dp"
             motion:layout_constraintStart_toStartOf="@+id/guideline2" />
         <Constraint
-            android:id="@+id/umidity_percent_tv"
+            android:id="@+id/humidity_percent_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintBaseline_toBaselineOf="@+id/humidity_tv"
@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             motion:layout_constraintBaseline_toBaselineOf="@+id/sunrise_tv"
             android:visibility="visible"
-            motion:layout_constraintStart_toStartOf="@+id/umidity_percent_tv" />
+            motion:layout_constraintStart_toStartOf="@+id/humidity_percent_tv" />
         <Constraint
             android:id="@+id/textView11"
             motion:layout_constraintEnd_toStartOf="@+id/max_temp_tv"

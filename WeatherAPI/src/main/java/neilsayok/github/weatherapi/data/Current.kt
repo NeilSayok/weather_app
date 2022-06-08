@@ -9,7 +9,7 @@ data class Current(
     @SerializedName("dew_point")
     var dewPoint: Double? = 0.0,
     @SerializedName("dt")
-    var dt: Int? = 0,
+    var dt: Long? = 0,
     @SerializedName("feels_like")
     var feelsLike: Double? = 0.0,
     @SerializedName("humidity")
