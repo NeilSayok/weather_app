@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/drawable-night/ic_baseline_download_24.xml" value="0.145" />
+        <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/drawable-night/ic_baseline_error_outline_24.xml" value="0.145" />
+        <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/drawable-night/ic_humidity_24.xml" value="0.145" />
+        <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/drawable-night/ic_wind_stream_24.xml" value="0.145" />
+        <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/drawable/ic_baseline_error_outline_24.xml" value="0.145" />
         <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/drawable/ic_baseline_push_pin_24.xml" value="0.145" />
         <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/drawable/ic_humidity_24.xml" value="0.145" />
+        <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/drawable/ic_round_push_pin_angled.xml" value="0.145" />
         <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/drawable/ic_wind_stream_24.xml" value="0.145" />
         <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/ANDROID/Android_Studio_Projects/TRYS/WayCool/WeatherApp/app/src/main/res/layout/fragment_maps.xml" value="0.11302083333333333" />
