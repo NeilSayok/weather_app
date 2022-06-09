@@ -99,8 +99,8 @@
             android:id="@+id/min_temp_tv"
             android:layout_marginTop="8dp" />
         <Constraint
-            android:layout_height="70dp"
-            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_width="80dp"
             android:id="@+id/rv_weather_icon"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
