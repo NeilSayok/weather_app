@@ -2,11 +2,9 @@ package neilsayok.github.weatherapp.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import neilsayok.github.weatherapi.data.Daily
 import neilsayok.github.weatherapi.data.Hourly
 import neilsayok.github.weatherapp.R
 import neilsayok.github.weatherapp.databinding.RecyclerItemSevenDaysBinding

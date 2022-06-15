@@ -5,11 +5,8 @@ import android.Manifest
 import android.content.Context
 import android.content.pm.PackageManager
 import android.location.Location
-import android.location.LocationListener
 import android.location.LocationManager
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -203,8 +200,8 @@ class TodayFragment : Fragment() {
         gMap = googleMap;
         gMap.uiSettings.isMyLocationButtonEnabled = false;
 
-        val myLoc =LatLng((location?.latitude ?: 0) as Double,
-            (location?.longitude ?: 0) as Double
+        val myLoc =LatLng((location?.latitude ?: 0.0) as Double,
+            (location?.longitude ?: 0.0) as Double
         )
         marker = gMap.addMarker(
             MarkerOptions()

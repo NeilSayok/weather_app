@@ -1,5 +1,6 @@
 package neilsayok.github.weatherapi.retrofit
 
+import neilsayok.github.weatherapi.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
@@ -24,7 +25,8 @@ abstract class RetrofitBuilder {
             val request = chain.request().newBuilder()
             val originalHttpUrl = chain.request().url
             val newUrl = originalHttpUrl.newBuilder()
-                .addQueryParameter("appid", "364ba416ff09e1a521cac00302d081bd")
+                //.addQueryParameter("appid", "<Your API Key Here>")
+                .addQueryParameter("appid", BuildConfig.APPID)
                 .addQueryParameter("exclude","minutely")
                 .addQueryParameter("units","metric")
                 .build()

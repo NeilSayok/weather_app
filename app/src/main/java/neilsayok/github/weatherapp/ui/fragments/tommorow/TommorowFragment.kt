@@ -1,19 +1,16 @@
 package neilsayok.github.weatherapp.ui.fragments.tommorow
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import neilsayok.github.weatherapp.R
-import neilsayok.github.weatherapp.databinding.FragmentSevenDaysBinding
 import neilsayok.github.weatherapp.databinding.FragmentTommorowBinding
 import neilsayok.github.weatherapp.ui.activity.MainActivity
 import neilsayok.github.weatherapp.ui.adapter.NextDayRVAdapter
-import neilsayok.github.weatherapp.ui.adapter.SevenDaysRVAdapter
 
 
 class TommorowFragment : Fragment() {
